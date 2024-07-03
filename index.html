@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitFav by Project Rocketseat</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="shortcut icon" href="./assets/favico.svg" type="image/x-svg" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img src="assets/gitfav.svg" alt="GitFav Logo" />
+
+        <div class="search">
+          <label class="sr-only" for="input-search"
+            >Digite o Github username que quer favoritar</label
+          >
+          <input
+            id="input-search"
+            type="text"
+            placeholder="Digite o Github username que quer favoritar"
+          />
+          <a href=""><img src="./assets/star.svg" alt="" /> Favoritar</a>
+        </div>
+      </header>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositories</th>
+              <th>Followers</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://github.com/rogeriolins.png"
+                  alt="Foto de Rogério Lins"
+                />
+                <a href="https://github.com/rogeriolins">
+                  <p>Rogerio Lins</p>
+                  <span>/rogeriolins</span>
+                </a>
+              </td>
+              <td class="repositors">2306</td>
+              <td class="followers">222</td>
+              <td><a href="" class="remove">Remover</a></td>
+            </tr>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://github.com/diego3g.png"
+                  alt="Foto de Diego Fernandes"
+                />
+                <a href="https://github.com/diego3g">
+                  <p>Diego Fernandes</p>
+                  <span>/diego3g</span>
+                </a>
+              </td>
+              <td class="repositors">2306</td>
+              <td class="followers">222</td>
+              <td><a href="" class="remove">Remover</a></td>
+            </tr>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://github.com/maykbrito.png"
+                  alt="Foto de Mayk Brito"
+                />
+                <a href="https://github.com/maykbrito">
+                  <p>Mayk Brito</p>
+                  <span>/maykbrito</span>
+                </a>
+              </td>
+              <td class="repositors">2306</td>
+              <td class="followers">222</td>
+              <td><a href="" class="remove">Remover</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
